@@ -1,5 +1,10 @@
 package debug;
 
+import java.util.HashMap;
+
+import element.Board;
+import element.Gem;
+
 public class Log {
 	private static Log logger = null;
 	public static enum DebugLevel{
@@ -22,5 +27,10 @@ public class Log {
 	
 	public void debug(DebugLevel level, String message){
 		System.out.printf("%s: %s", level, message);
+	}
+	
+	public void debug(DebugLevel level, Board board){
+		System.out.println(level);
+		
 	}
 }

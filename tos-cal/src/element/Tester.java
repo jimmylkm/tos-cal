@@ -14,6 +14,10 @@ public class Tester {
 //		System.out.println(color);
 //		System.out.println(color.getValue());
 		
-		Log.getInstance().debug(Log.DebugLevel.RESULT, "Jimmy");
+//		Log.getInstance().debug(Log.DebugLevel.RESULT, "Jimmy");
+		
+//		Board board = new Board();
+//		board.init();
+//		board.printBoard();
 	}
 }

@@ -8,6 +8,8 @@ public class Utility {
 	private static final Random RAND = new Random();
 	private static final Color[] VALUES = Color.values();
 	
+	
+	
 	private static int randInt(int max, int min){
 		int randNum = RAND.nextInt((max - min) + 1) + min;
 		return randNum;

@@ -4,9 +4,8 @@ public class Gem {
 	private Color color;
 	private boolean isAmp;
 	
-	public Gem(Color color, boolean isAmp){
-		this.color = color;
-		this.isAmp = isAmp;
+	public Gem(){
+		init();
 	}
 	
 	public Color getColor() {
