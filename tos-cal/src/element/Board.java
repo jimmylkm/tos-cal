@@ -6,17 +6,8 @@ import java.util.Random;
 public class Board {
 	private HashMap<Integer, Gem> gemMap;
 	private int[][] board = new int[6][5];
-	private static Board gameboard;
-	
-	private Board(){}
-	
-	public static Board getInstance(){
-		if(gameboard == null)
-			return (gameboard = new Board());
-		else
-			return gameboard;
-	}
-	
+//	private static Board gameboard;
+		
 	public void init(){
 		
 	}

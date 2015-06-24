@@ -1,7 +1,5 @@
 package element;
 
-import java.util.Random;
-
 public class Gem {
 	private Color color;
 	private boolean isAmp;
@@ -30,14 +28,9 @@ public class Gem {
 			+	"isAmp = " + isAmp);
 	}
 	
-	public static int randInt(int max, int min){
-		Random rand = new Random();
-		int randNum = rand.nextInt((max - min) + 1) + min;
-		return randNum;
-	}
-	
 	public void init(){
-//		this.color = randInt(5,0);
+		color = Utility.randColor();
+		isAmp = false;
 	}
 	
 }
