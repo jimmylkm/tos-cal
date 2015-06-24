@@ -4,10 +4,6 @@ public class Gem {
 	private Color color;
 	private boolean isAmp;
 	
-	public Gem(){
-		init();
-	}
-	
 	public Color getColor() {
 		return color;
 	}

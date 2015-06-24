@@ -8,7 +8,7 @@ import element.Gem;
 public class Log {
 	private static Log logger = null;
 	public static enum DebugLevel{
-		STEP(1), RESULT(2);
+		STEP(1), RESULT(2), ERROR(3);
 		private int value;
 		
 		private DebugLevel(int value){
@@ -26,11 +26,11 @@ public class Log {
 	}
 	
 	public void debug(DebugLevel level, String message){
-		System.out.printf("%s: %s", level, message);
+		System.out.printf("%s: %s\n", level, message);
 	}
 	
-	public void debug(DebugLevel level, Board board){
-		System.out.println(level);
-		
-	}
+//	public void debug(DebugLevel level, Board board){
+//		System.out.println(level);
+//		
+//	}
 }
